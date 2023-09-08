@@ -30,8 +30,15 @@ In this real-world scenario, Apache Tomcat serves as the underlying web server a
 ## Commands To Setup:
 
 ```shell
-##################----INSTALL TOMCAT----##################
+
+##################---INSTALL JAVA-----####################
 cd /opt
+sudo apt-get update -y
+sudo apt install openjdk-11-jre -y
+sudo apt-get install maven -y
+
+##################----INSTALL TOMCAT----##################
+
 sudo wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz
 sudo tar -xvf apache-tomcat-9.0.65.tar.gz
 
